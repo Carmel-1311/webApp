@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อและจองโต๊ะ | Warm Bakery Cafe</title>
+</head>
+<body>
+  <header>
+    <div class="brand">Warm Bakery Cafe</div>
+    <nav aria-label="Main navigation">
+      <a href="../index.htm">หน้าแรก (Home)</a>
+      <a href="menu.htm">เมนูเบเกอรี่ (Menu)</a>
+      <a href="../index.htm#about">เกี่ยวกับเรา (About Us)</a>
+      <a class="active" href="order.htm">ติดต่อและจองโต๊ะ (Contact & Booking)</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <table width="100%" cellpadding="10">
+        <tr>
+          <td width="50%" valign="top">
+            <h2>🛒 เลือกรายการอาหาร</h2>
+            <hr>
+
+            <table width="100%" cellpadding="8" border="1">
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox" name="menu[]" value="Butter Croissant">
+                    <strong>Butter Croissant</strong>
+                  </label>
+                  <strong>฿85</strong>
+                  <br><br>
+                  จำนวน:
+                  <input type="number" name="croissant_qty" min="0" value="1">
+                  คำสั่งพิเศษ:
+                  <input type="text" name="croissant_note" placeholder="เช่น อุ่นร้อน, ไม่ใส่น้ำตาล">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox" name="menu[]" value="Banana Bread">
+                    <strong>Banana Bread</strong>
+                  </label>
+                  <strong>฿75</strong>
+                  <br><br>
+                  จำนวน:
+                  <input type="number" name="banana_qty" min="0" value="1">
+                  คำสั่งพิเศษ:
+                  <input type="text" name="banana_note" placeholder="เช่น ไม่ใส่ถั่ว, หั่นชิ้น">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox" name="menu[]" value="Chocolate Fudge Cake">
+                    <strong>Chocolate Fudge Cake</strong>
+                  </label>
+                  <strong>฿120</strong>
+                  <br><br>
+                  จำนวน:
+                  <input type="number" name="chocolate_qty" min="0" value="1">
+                  คำสั่งพิเศษ:
+                  <input type="text" name="chocolate_note" placeholder="เช่น เขียนข้อความบนเค้ก">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox" name="menu[]" value="Hot Latte">
+                    <strong>Hot Latte</strong>
+                  </label>
+                  <strong>฿85</strong>
+                  <br><br>
+                  จำนวน:
+                  <input type="number" name="latte_qty" min="0" value="1">
+                  คำสั่งพิเศษ:
+                  <input type="text" name="latte_note" placeholder="เช่น หวานน้อย, นมโอ๊ต">
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="50%" valign="top">
+            <h2>📍 ข้อมูลจัดส่งและเวลา</h2>
+            <hr>
+
+            <label>
+              ชื่อผู้รับ:
+              <br>
+              <input type="text" name="name" placeholder="ชื่อ-นามสกุลของผู้รับ" required>
+            </label>
+            <br><br>
+
+            <label>
+              เบอร์โทรศัพท์:
+              <br>
+              <input type="tel" name="phone" placeholder="08xxxxxxxx" required>
+            </label>
+            <br><br>
+
+            <label>
+              วันที่ต้องการรับอาหาร:
+              <br>
+              <input type="date" name="date" required>
+            </label>
+            <br><br>
+
+            <label>
+              เวลาที่ต้องการรับอาหาร:
+              <br>
+              <input type="time" name="time" required>
+            </label>
+            <br><br>
+
+            <label>
+              ที่อยู่จัดส่ง:
+              <br>
+              <textarea name="address" rows="5" cols="45" placeholder="บ้านเลขที่, ซอย, ถนน, ตำบล, อำเภอ, จังหวัด"></textarea>
+            </label>
+            <br><br>
+
+            <label>
+              รูปแบบบริการ:
+              <br>
+              <select name="service" required>
+                <option>รับที่ร้าน</option>
+                <option>จัดส่งถึงบ้าน</option>
+                <option>จองโต๊ะและรับประทานที่ร้าน</option>
+              </select>
+            </label>
+            <br><br>
+
+            <button type="submit">🚀 ยืนยันรายการสั่งซื้อ</button>
+            <button type="reset">ล้างข้อมูล</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+</body>
+</html>
